@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Adjusts based on content */
+}
+
+.container {
+    width: 960px;
+    padding: 20px;
+    margin-top: 90px; /* Pushes the content down by the height of the navbar */
+    margin-bottom: 50px; /* Adds space below the Hero section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-title-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.title, .description {
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+
+.text-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container input[type="text"] {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F5F0E5;
+    width: 400px;
+    height: 64px;
+    outline: none;
+}
+
+.text-container input::placeholder {
+    color: #A1824A;
+    opacity: 1;
+}
