@@ -1,0 +1,454 @@
+/* ============================================
+   DEDICATED LANDS EXPLORE PAGE
+   ============================================ */
+
+.lands-page {
+  background: var(--neutral-50);
+  min-height: 80vh;
+}
+
+.lands-page__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* Advanced Filters Panel */
+.filters-panel {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-xl);
+  padding: 32px;
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle decorative accent line for the panel */
+.filters-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-600), var(--gold-500));
+}
+
+.filters-panel__row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  align-items: flex-end;
+}
+
+.filters-panel__search-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.filters-panel__search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-600);
+  pointer-events: none;
+}
+
+.filters-panel__search-input {
+  width: 100%;
+  padding: 16px 16px 16px 48px;
+  border: 1px solid var(--neutral-200);
+  background: var(--neutral-50);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.filters-panel__search-input:focus {
+  border-color: var(--primary-500);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(28, 122, 92, 0.15);
+}
+
+.filters-panel__sort-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 220px;
+}
+
+.filters-panel__label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-700);
+}
+
+.filters-panel__select {
+  padding: 16px;
+  border: 1px solid var(--neutral-200);
+  background: var(--neutral-50);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  outline: none;
+  transition: all var(--transition-fast);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23125c45' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  padding-right: 40px;
+}
+
+.filters-panel__select:focus {
+  border-color: var(--primary-500);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(28, 122, 92, 0.15);
+}
+
+/* Filter Grid */
+.filters-panel__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 24px;
+  border-top: 1px dashed var(--neutral-200);
+  padding-top: 24px;
+}
+
+.filters-panel__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filters-panel__location-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filters-panel__loc-btn {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  background: var(--neutral-50);
+  border: 1px solid var(--neutral-200);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.filters-panel__loc-btn:hover {
+  background: var(--primary-100);
+  color: var(--primary-800);
+  border-color: var(--primary-300);
+}
+
+.filters-panel__loc-btn--active {
+  background: var(--primary-700);
+  color: white;
+  border-color: var(--primary-700);
+  box-shadow: var(--shadow-sm);
+}
+
+.filters-panel__loc-btn--active:hover {
+  background: var(--primary-800);
+  color: white;
+}
+
+/* Range Inputs */
+.filters-panel__range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filters-panel__range-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-sm);
+  background: var(--neutral-50);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.filters-panel__range-input:focus {
+  border-color: var(--primary-500);
+  background: white;
+  box-shadow: 0 0 0 2px rgba(28, 122, 92, 0.1);
+}
+
+.filters-panel__range-to {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Filters Footer */
+.filters-panel__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--neutral-200);
+}
+
+.filters-panel__results-count {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-600);
+}
+
+.filters-panel__reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--neutral-600);
+  transition: color var(--transition-fast);
+}
+
+.filters-panel__reset-btn:hover {
+  color: var(--gold-600);
+}
+
+.filters-panel__reset-btn svg {
+  transition: transform var(--transition-base);
+}
+
+.filters-panel__reset-btn:hover svg {
+  transform: rotate(-180deg);
+}
+
+/* Cards Grid */
+.lands-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Premium Land Card */
+.lands-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(12, 59, 46, 0.05);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.lands-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(223, 177, 91, 0.3); /* gold accent boundary */
+}
+
+.lands-card__img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.lands-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.lands-card:hover .lands-card__img {
+  transform: scale(1.04);
+}
+
+.lands-card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  background: rgba(12, 59, 46, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lands-card__deed-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--gold-900);
+  background: var(--gold-300);
+  padding: 6px 10px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(223, 177, 91, 0.2);
+}
+
+.lands-card__body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.lands-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary-700);
+  margin-bottom: 12px;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  min-height: 48px;
+}
+
+.lands-card__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--neutral-100);
+}
+
+.lands-card__detail-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.lands-card__detail-item svg {
+  color: var(--primary-500);
+}
+
+.lands-card__ref-code {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  background: var(--neutral-100);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.lands-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.lands-card__price {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--primary-600);
+}
+
+.lands-card__action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary-700);
+  transition: all var(--transition-fast);
+}
+
+.lands-card:hover .lands-card__action-btn {
+  color: var(--gold-600);
+}
+
+.lands-card__action-btn svg {
+  transition: transform var(--transition-fast);
+}
+
+.lands-card:hover .lands-card__action-btn svg {
+  transform: translateX(4px);
+}
+
+/* Empty State */
+.lands-page__empty {
+  text-align: center;
+  padding: 80px 24px;
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--neutral-200);
+  color: var(--text-secondary);
+}
+
+.lands-page__empty-icon {
+  color: var(--neutral-400);
+  margin-bottom: 16px;
+}
+
+.lands-page__empty h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .lands-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters-panel__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-panel {
+    padding: 20px;
+  }
+
+  .filters-panel__row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters-panel__sort-wrap {
+    width: 100%;
+  }
+
+  .lands-page__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
