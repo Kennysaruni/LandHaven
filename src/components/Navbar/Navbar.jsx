@@ -27,7 +27,8 @@ function Navbar({ currentRoute }) {
     }
   };
 
-  const isScrolledOrSubpage = scrolled || currentRoute?.page !== "home";
+  // Solid navbar background for guaranteed link contrast on both light and dark backdrops
+  const isScrolledOrSubpage = true;
 
   const navLinks = [
     { label: "Home", target: "hero", href: "/#hero" },
