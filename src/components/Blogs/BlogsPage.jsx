@@ -125,7 +125,7 @@ function BlogsPage() {
               </svg>
             </div>
             <h3>No Articles Found</h3>
-            <p>We couldn't find any articles matching your search query or category selection. Try resetting your search filters.</p>
+            <p>{"We couldn't find any articles matching your search query or category selection. Try resetting your search filters."}</p>
             <button onClick={() => { setSearchTerm(""); setSelectedCategory("All"); }} className="btn btn-primary btn-sm" style={{ marginTop: "16px" }}>
               Reset Filters
             </button>

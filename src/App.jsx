@@ -143,17 +143,33 @@ function App() {
       <Navbar currentRoute={route} />
       <main>
         {route.page === 'home' && (
-          <>
+          <div key="home" className="fade-in-page">
             <Hero />
             <WhyChooseUs />
             <Listings isPreview={true} />
             <InquiryForm />
-          </>
+          </div>
         )}
-        {route.page === 'lands' && <LandsPage />}
-        {route.page === 'details' && <LandDetails landId={route.id} />}
-        {route.page === 'blogs' && <BlogsPage />}
-        {route.page === 'blog-details' && <BlogDetails blogId={route.id} />}
+        {route.page === 'lands' && (
+          <div key="lands" className="fade-in-page">
+            <LandsPage />
+          </div>
+        )}
+        {route.page === 'details' && (
+          <div key={`details-${route.id}`} className="fade-in-page">
+            <LandDetails landId={route.id} />
+          </div>
+        )}
+        {route.page === 'blogs' && (
+          <div key="blogs" className="fade-in-page">
+            <BlogsPage />
+          </div>
+        )}
+        {route.page === 'blog-details' && (
+          <div key={`blog-details-${route.id}`} className="fade-in-page">
+            <BlogDetails blogId={route.id} />
+          </div>
+        )}
       </main>
       <Footer />
       <WhatsAppButton />

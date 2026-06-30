@@ -39,7 +39,7 @@ function Navbar({ currentRoute }) {
   ];
 
   return (
-    <nav className={`navbar ${isScrolledOrSubpage ? "navbar--scrolled" : ""}`} id="navbar">
+    <nav className={`navbar ${isScrolledOrSubpage ? "navbar--scrolled" : ""} ${mobileOpen ? "navbar--open" : ""}`} id="navbar">
       <div className="navbar__inner">
         {/* Logo */}
         <a
@@ -101,15 +101,19 @@ function Navbar({ currentRoute }) {
             </li>
           ))}
         </ul>
+        <div className="navbar__mobile-cta">
+          <a
+            href="https://wa.me/254723597959"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+            style={{ width: "100%", justifyContent: "center" }}
+            onClick={() => setMobileOpen(false)}
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
       </div>
-
-      {/* Mobile Overlay */}
-      {mobileOpen && (
-        <div
-          className="navbar__overlay"
-          onClick={() => setMobileOpen(false)}
-        ></div>
-      )}
     </nav>
   );
 }

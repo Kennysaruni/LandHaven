@@ -28,10 +28,10 @@ function Hero() {
               <span className="hero__title-accent">Consulting & Surveying</span>
             </h1>
             <p className="hero__subtitle">
-              Expert land subdivision, amalgamation, mapping, and verification services. 
+              Expert land subdivision, amalgamation, mapping, and verification services.
               Find certified premium plots and invest with absolute confidence.
             </p>
-            
+
             <div className="hero__actions">
               <a
                 href="/lands"

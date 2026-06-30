@@ -369,3 +369,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 54px;
   }
 }
+
+/* --- Premium Spacing and Page Transitions --- */
+
+/* Breathing room between navbar and top content on subpages */
+.lands-page.section,
+.land-details.section,
+.blogs-page,
+.blog-details {
+  padding-top: calc(var(--nav-height) + 64px) !important;
+}
+
+/* SPA Page transition entries */
+.fade-in-page {
+  opacity: 0;
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

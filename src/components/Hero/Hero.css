@@ -24,7 +24,8 @@
 .hero__shape {
   position: absolute;
   border-radius: 50%;
-  background: rgba(223, 177, 91, 0.08); /* Soft gold glow leaks */
+  background: rgba(223, 177, 91, 0.08);
+  /* Soft gold glow leaks */
   animation: float 10s ease-in-out infinite;
 }
 
@@ -42,7 +43,8 @@
   bottom: -50px;
   left: -100px;
   animation-delay: 3s;
-  background: rgba(28, 122, 92, 0.04); /* Soft emerald glow leak */
+  background: rgba(28, 122, 92, 0.04);
+  /* Soft emerald glow leak */
 }
 
 .hero__shape--3 {
@@ -216,10 +218,21 @@
   transform-origin: center;
 }
 
-.anim-pulse-group:nth-child(2) .anim-beacon-ring { animation-delay: 0.4s; }
-.anim-pulse-group:nth-child(3) .anim-beacon-ring { animation-delay: 0.8s; }
-.anim-pulse-group:nth-child(4) .anim-beacon-ring { animation-delay: 1.2s; }
-.anim-pulse-group:nth-child(5) .anim-beacon-ring { animation-delay: 1.6s; }
+.anim-pulse-group:nth-child(2) .anim-beacon-ring {
+  animation-delay: 0.4s;
+}
+
+.anim-pulse-group:nth-child(3) .anim-beacon-ring {
+  animation-delay: 0.8s;
+}
+
+.anim-pulse-group:nth-child(4) .anim-beacon-ring {
+  animation-delay: 1.2s;
+}
+
+.anim-pulse-group:nth-child(5) .anim-beacon-ring {
+  animation-delay: 1.6s;
+}
 
 /* Dynamic vector drawing line dash effect */
 .anim-polygon {
@@ -288,6 +301,7 @@
     transform: scale(0.3);
     opacity: 0.8;
   }
+
   100% {
     transform: scale(1.1);
     opacity: 0;
@@ -299,6 +313,7 @@
     transform: scale(0.6);
     opacity: 1;
   }
+
   100% {
     transform: scale(2.2);
     opacity: 0;
@@ -318,9 +333,12 @@
 }
 
 @keyframes tagFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
@@ -418,6 +436,7 @@
   .tag--gps {
     left: 0;
   }
+
   .tag--deed {
     right: 0;
   }
@@ -438,4 +457,3 @@
   border-color: var(--primary-700);
   color: var(--primary-800);
 }
-
