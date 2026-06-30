@@ -22,14 +22,14 @@ function Hero() {
         <div className="hero__grid-layout">
           {/* Left Column: Premium Pitch */}
           <div className="hero__left">
-            <span className="hero__pretitle">Premium Land Investment</span>
+            <span className="hero__pretitle">Jermaine Technologies Entreprises</span>
             <h1 className="hero__title">
-              Invest in Verified, <br />
-              <span className="hero__title-accent">Prime Land in Kenya</span>
+              Professional Land <br />
+              <span className="hero__title-accent">Consulting & Surveying</span>
             </h1>
             <p className="hero__subtitle">
-              Discover certified land plots across high-growth areas. 
-              From Ruiru to Narok — secure your legacy with confidence.
+              Expert land subdivision, amalgamation, mapping, and verification services. 
+              Find certified premium plots and invest with absolute confidence.
             </p>
             
             <div className="hero__actions">

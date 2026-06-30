@@ -9,6 +9,8 @@ import Footer from './components/Footer/Footer';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
 import LandsPage from './components/Listings/LandsPage';
 import LandDetails from './components/Listings/LandDetails';
+import BlogsPage from './components/Blogs/BlogsPage';
+import BlogDetails from './components/Blogs/BlogDetails';
 
 function App() {
   const [route, setRoute] = useState(() => {
@@ -17,6 +19,10 @@ function App() {
       return { page: 'details', id: path.replace('/details/', '') };
     } else if (path === '/lands') {
       return { page: 'lands' };
+    } else if (path.startsWith('/blogs/')) {
+      return { page: 'blog-details', id: path.replace('/blogs/', '') };
+    } else if (path === '/blogs') {
+      return { page: 'blogs' };
     }
     return { page: 'home' };
   });
@@ -30,6 +36,10 @@ function App() {
         setRoute({ page: 'details', id: path.replace('/details/', '') });
       } else if (path === '/lands') {
         setRoute({ page: 'lands' });
+      } else if (path.startsWith('/blogs/')) {
+        setRoute({ page: 'blog-details', id: path.replace('/blogs/', '') });
+      } else if (path === '/blogs') {
+        setRoute({ page: 'blogs' });
       } else {
         setRoute({ page: 'home' });
       }
@@ -75,7 +85,13 @@ function App() {
           }
 
           // SPA page changes
-          if (path === '/' || path === '/lands' || path.startsWith('/details/')) {
+          if (
+            path === '/' ||
+            path === '/lands' ||
+            path.startsWith('/details/') ||
+            path === '/blogs' ||
+            path.startsWith('/blogs/')
+          ) {
             e.preventDefault();
             window.history.pushState(null, '', path);
             window.dispatchEvent(new PopStateEvent('popstate'));
@@ -136,6 +152,8 @@ function App() {
         )}
         {route.page === 'lands' && <LandsPage />}
         {route.page === 'details' && <LandDetails landId={route.id} />}
+        {route.page === 'blogs' && <BlogsPage />}
+        {route.page === 'blog-details' && <BlogDetails blogId={route.id} />}
       </main>
       <Footer />
       <WhatsAppButton />

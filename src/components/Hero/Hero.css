@@ -426,3 +426,16 @@
     display: none;
   }
 }
+
+/* Custom legible outline button on light background */
+.hero__actions .btn-outline {
+  color: var(--primary-700);
+  border-color: var(--primary-500);
+}
+
+.hero__actions .btn-outline:hover {
+  background: var(--primary-50);
+  border-color: var(--primary-700);
+  color: var(--primary-800);
+}
+

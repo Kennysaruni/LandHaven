@@ -12,7 +12,7 @@ export const data = [
     area: 0.0369,
     registryMapSheetNumber: "3",
     ownerName: "Peter Saruni",
-    price: 250000,
+    price: 2500000,
     location: "Ruiru, Kenya",
     imageUrl: images[0]
   },
@@ -23,7 +23,7 @@ export const data = [
     area: 0.8094,
     registryMapSheetNumber: "5",
     ownerName: "Peter Saruni",
-    price: 300000,
+    price: 3000000,
     location: "Ruiru, Kenya",
     imageUrl: images[1]
   },
@@ -34,7 +34,7 @@ export const data = [
     area: 0.044,
     registryMapSheetNumber: "132/4 & 6/2",
     ownerName: "Peter Saruni",
-    price: 350000,
+    price: 3500000,
     location: "Narok, Kenya",
     imageUrl: images[2]
   },
@@ -45,7 +45,7 @@ export const data = [
     area: 0.044,
     registryMapSheetNumber: "132/4 &4C&6/2",
     ownerName: "Peter Saruni",
-    price: 350000,
+    price: 3500000,
     location: "Narok, Kenya",
     imageUrl: images[0]
   },
@@ -56,7 +56,7 @@ export const data = [
     area: 0.05,
     registryMapSheetNumber: "1",
     ownerName: "Mark Ngigi",
-    price: 200000,
+    price: 2000000,
     location: "Narok, Kenya",
     imageUrl: images[1]
   },
@@ -67,7 +67,7 @@ export const data = [
     area: 0.0423,
     registryMapSheetNumber: "4",
     ownerName: "Peter Saruni",
-    price: 450000,
+    price: 4500000,
     location: "Ruiru, Kenya",
     imageUrl: images[2]
   },
@@ -78,7 +78,7 @@ export const data = [
     area: 0.045,
     registryMapSheetNumber: "RM12351",
     ownerName: "Peter Saruni",
-    price: 280000,
+    price: 2800000,
     location: "Narok, Kenya",
     imageUrl: images[0]
   },
@@ -89,7 +89,7 @@ export const data = [
     area: 0.034,
     registryMapSheetNumber: "5",
     ownerName: "Peter Saruni",
-    price: 320000,
+    price: 3200000,
     location: "Ruiru, Kenya",
     imageUrl: images[1]
   },
@@ -100,7 +100,7 @@ export const data = [
     area: 0.043,
     registryMapSheetNumber: "3",
     ownerName: "Peter Saruni",
-    price: 370000,
+    price: 3700000,
     location: "Ruiru, Kenya",
     imageUrl: images[2]
   },
@@ -111,7 +111,7 @@ export const data = [
     area: 0.0474,
     registryMapSheetNumber: "RM12354",
     ownerName: "Peter Saruni",
-    price: 420000,
+    price: 4200000,
     location: "Ruiru, Kenya",
     imageUrl: images[0]
   },
@@ -122,7 +122,7 @@ export const data = [
     area: 0.0423,
     registryMapSheetNumber: "4",
     ownerName: "Peter Saruni",
-    price: 190000,
+    price: 1900000,
     location: "Ruiru, Kenya",
     imageUrl: images[1]
   },
@@ -133,7 +133,7 @@ export const data = [
     area: 0.0410,
     registryMapSheetNumber: "3",
     ownerName: "Peter Saruni",
-    price: 240000,
+    price: 2400000,
     location: "Ruiru, Kenya",
     imageUrl: images[2]
   }

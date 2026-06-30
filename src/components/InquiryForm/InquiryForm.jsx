@@ -84,7 +84,7 @@ function InquiryForm({ prefilledLand = "", minimal = false }) {
                 type="tel"
                 name="phone"
                 className={`inquiry__input ${errors.phone ? "inquiry__input--error" : ""}`}
-                placeholder="+254 700 000 000"
+                placeholder="+254 723 597 959"
                 value={formData.phone}
                 onChange={handleChange}
               />
@@ -184,8 +184,8 @@ function InquiryForm({ prefilledLand = "", minimal = false }) {
       <div className="container">
         <div className="section-header animate-on-scroll">
           <span className="section-label">Get in Touch</span>
-          <h2 className="section-title" style={{ color: "white" }}>Inquire About a Property</h2>
-          <p className="section-subtitle" style={{ color: "rgba(255,255,255,0.7)" }}>
+          <h2 className="section-title">Inquire About a Property</h2>
+          <p className="section-subtitle">
             Fill out the form and our team will get back to you within 24 hours.
           </p>
         </div>
@@ -205,7 +205,7 @@ function InquiryForm({ prefilledLand = "", minimal = false }) {
                 </svg>
               </div>
               <h4>Phone</h4>
-              <p>+254 700 000 000</p>
+              <p>+254 723 597 959</p>
             </div>
 
             <div className="inquiry__info-card">
@@ -216,7 +216,7 @@ function InquiryForm({ prefilledLand = "", minimal = false }) {
                 </svg>
               </div>
               <h4>Email</h4>
-              <p>info@landhaven.co.ke</p>
+              <p>saruni2003@gmail.com</p>
             </div>
 
             <div className="inquiry__info-card">

@@ -3,9 +3,10 @@
    ============================================ */
 
 .inquiry {
-  background: linear-gradient(135deg, var(--primary-900), var(--primary-950));
+  background: linear-gradient(135deg, var(--primary-50) 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
+  border-top: 1px solid var(--neutral-200);
 }
 
 /* Background Shapes */
@@ -178,20 +179,20 @@
 }
 
 .inquiry__info-card {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: white;
+  border: 1px solid var(--neutral-200);
   border-radius: var(--radius-md);
   padding: 24px;
   display: flex;
   align-items: center;
   gap: 16px;
   transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
 .inquiry__info-card:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--primary-50);
+  border-color: var(--primary-300);
   transform: translateX(6px);
 }
 
@@ -201,9 +202,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(16, 185, 129, 0.15);
+  background: var(--primary-100);
   border-radius: var(--radius-sm);
-  color: var(--primary-300);
+  color: var(--primary-600);
   flex-shrink: 0;
 }
 
@@ -216,7 +217,7 @@
   font-family: var(--font-heading);
   font-size: 0.85rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 2px;
@@ -224,8 +225,8 @@
 
 .inquiry__info-card p {
   font-size: 1rem;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
+  color: var(--primary-800);
 }
 
 /* Responsive */

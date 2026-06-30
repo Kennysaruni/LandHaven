@@ -24,27 +24,48 @@
   overflow: hidden;
 }
 
-.why-us__card::before {
+.why-us__card::before,
+.why-us__card::after {
   content: '';
   position: absolute;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  transition: all var(--transition-base);
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+}
+
+.why-us__card::before {
   top: 0;
   left: 0;
+}
+
+.why-us__card::after {
+  bottom: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary-400), var(--primary-600));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-base);
 }
 
 .why-us__card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary-200);
+  border-color: transparent;
 }
 
 .why-us__card:hover::before {
-  transform: scaleX(1);
+  width: 100%;
+  height: 100%;
+  border-top-color: var(--primary-600);
+  border-right-color: var(--primary-600);
+}
+
+.why-us__card:hover::after {
+  width: 100%;
+  height: 100%;
+  border-bottom-color: var(--primary-600);
+  border-left-color: var(--primary-600);
 }
 
 .why-us__icon {

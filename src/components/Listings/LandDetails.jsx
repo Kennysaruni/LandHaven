@@ -32,17 +32,17 @@ function LandDetails({ landId }) {
   };
 
   // Pre-fill parameters for WhatsApp and email links
-  const contactPhone = "254700000000";
+  const contactPhone = "254723597959";
   const whatsappMsg = encodeURIComponent(
-    `Hello LandHaven! I am interested in purchasing property reference #${listing.number}: "${listing.title}" located in ${listing.location} for KES ${formatPrice(listing.price)}. Please share more details.`
+    `Hello Jermaine Technologies Entreprises! I am interested in purchasing property reference #${listing.number}: "${listing.title}" located in ${listing.location} for KES ${formatPrice(listing.price)}. Please share more details.`
   );
   const whatsappUrl = `https://wa.me/${contactPhone}?text=${whatsappMsg}`;
 
-  const emailSubject = encodeURIComponent(`Inquiry on Land Haven Listing #${listing.number}`);
+  const emailSubject = encodeURIComponent(`Inquiry on Jermaine Technologies Entreprises Listing #${listing.number}`);
   const emailBody = encodeURIComponent(
     `Hello,\n\nI am writing to inquire about the property: "${listing.title}" (Ref Code: #${listing.number}).\n\nLocation: ${listing.location}\nPrice: KES ${formatPrice(listing.price)}\n\nPlease provide me with information on how to proceed with a site visit.\n\nThank you.`
   );
-  const emailUrl = `mailto:info@landhaven.co.ke?subject=${emailSubject}&body=${emailBody}`;
+  const emailUrl = `mailto:info@jermainetechnologies.co.ke?subject=${emailSubject}&body=${emailBody}`;
 
   return (
     <div className="land-details section">
@@ -97,7 +97,7 @@ function LandDetails({ landId }) {
               </p>
               <p className="details-card__desc">
                 The property is adjacent to essential public utilities, has access to well-maintained access roads, clean water connection, and power lines. 
-                All legal checks have been conducted by LandHaven, ensuring the title is clean, unencumbered, and ready for immediate registry transfer to the buyer.
+                All legal checks have been conducted by Jermaine Technologies Entreprises, ensuring the title is clean, unencumbered, and ready for immediate registry transfer to the buyer.
               </p>
             </div>
 
@@ -134,7 +134,7 @@ function LandDetails({ landId }) {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
-                LandHaven Purchasing Guarantees
+                Jermaine Technologies Entreprises Purchasing Guarantees
               </h4>
               <ul className="safety-card__list">
                 <li><strong>Title Verification:</strong> Land registry search cert is updated and available upon request.</li>
@@ -160,11 +160,11 @@ function LandDetails({ landId }) {
                     Chat on WhatsApp
                   </a>
                   
-                  <a href="tel:+254700000000" className="btn-contact btn-contact--phone">
+                  <a href="tel:+254723597959" className="btn-contact btn-contact--phone">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" width="16" height="16">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
-                    Call Agent (+254 700 000)
+                    Call Agent (+254 723 597 959)
                   </a>
 
                   <a href={emailUrl} className="btn-contact btn-contact--email">

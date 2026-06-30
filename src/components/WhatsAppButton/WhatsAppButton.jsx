@@ -5,8 +5,8 @@ function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
 
   // Replace with actual phone number
-  const phoneNumber = "254700000000";
-  const message = encodeURIComponent("Hello! I'm interested in buying land from LandHaven. Can you help me?");
+  const phoneNumber = "254723597959";
+  const message = encodeURIComponent("Hello! I'm interested in the land services at Jermaine Technologies Entreprises. Can you help me?");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (

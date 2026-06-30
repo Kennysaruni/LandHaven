@@ -9,8 +9,8 @@ const features = [
         <path d="M9 12l2 2 4-4"/>
       </svg>
     ),
-    title: "Verified Titles",
-    description: "Every plot comes with fully verified title deeds and official documentation you can trust."
+    title: "Land Amalgamation",
+    description: "Consolidating adjacent land parcels into a single title deed under the Land Registration Act of Kenya."
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const features = [
         <circle cx="12" cy="10" r="3"/>
       </svg>
     ),
-    title: "Prime Locations",
-    description: "Strategically located plots in high-growth areas like Ruiru, Narok, and Thika."
+    title: "Land Subdivision",
+    description: "Partitioning large acreage into individual plots, processing mutations, and securing new title deeds."
   },
   {
     id: 3,
@@ -31,8 +31,8 @@ const features = [
         <line x1="2" y1="10" x2="22" y2="10"/>
       </svg>
     ),
-    title: "Flexible Payments",
-    description: "Affordable installment plans tailored to your budget. Start your investment today."
+    title: "Physical & Land Use Planning",
+    description: "Zoning amendments, NEMA approvals, and Change of User applications (e.g., Agricultural to Residential) under the Physical and Land Use Planning Act."
   },
   {
     id: 4,
@@ -44,8 +44,8 @@ const features = [
         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
       </svg>
     ),
-    title: "Expert Support",
-    description: "Our dedicated team guides you from inquiry through purchase to title transfer."
+    title: "Ministry of Lands Consulting",
+    description: "Conducting official registry searches, boundary beacon mapping, and navigating Ministry of Lands registry procedures."
   }
 ];
 
@@ -54,10 +54,10 @@ function WhyChooseUs() {
     <section className="why-us section" id="why-us">
       <div className="container">
         <div className="section-header animate-on-scroll">
-          <span className="section-label">Why LandHaven</span>
-          <h2 className="section-title">Why Clients Choose Us</h2>
+          <span className="section-label">Services & Expertise</span>
+          <h2 className="section-title">Our Consulting Services</h2>
           <p className="section-subtitle">
-            We make land ownership simple, secure, and accessible for everyone.
+            Jermaine Technologies Entreprises delivers professional engineering, surveying, and land administration solutions.
           </p>
         </div>
 
