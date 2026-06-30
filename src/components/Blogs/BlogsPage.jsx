@@ -33,7 +33,7 @@ function BlogsPage() {
         {/* Page Header */}
         <div className="blogs-page__header">
           <span className="section-label">Land & Regulatory Insights</span>
-          <h1 className="section-title">Antigravity Knowledge Hub</h1>
+          <h1 className="section-title">Knowledge Hub</h1>
           <p className="section-subtitle">
             Authoritative guides, market analyses, and expert strategies written by senior physical planners and land-use consultants.
           </p>
