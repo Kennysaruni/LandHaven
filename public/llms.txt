@@ -1,0 +1,28 @@
+# LandHaven - Professional Land Consulting & Surveying in Kenya
+
+> LandHaven (a division of Jermaine Technologies Entreprises) provides premium, fully verified land plots, subdivision mapping, highest and best use (HBU) studies, and zoning consultancy in Kenya.
+
+## Core Services
+- **Land Surveys & Beaconing**: Precise boundary mapping by licensed land surveyors.
+- **Zoning & User Modifications**: Changing zoning definitions (agricultural to commercial/residential), variance authorizations under PLUPA 2019.
+- **Subdivision & Amalgamation**: Splitting and consolidating title deeds.
+- **Environmental Assessments**: NEMA licensing and ESIA studies.
+- **Master Planning**: Site layout configurations for satellite estates and logistics hubs.
+
+## Key Sitemap Sections
+- [Homepage](https://landhaven.co.ke/): Explains JTE surveying solutions, land purchase guarantees, and contact points.
+- [Lands Directory](https://landhaven.co.ke/lands): Lists verified, cleanly-titled land properties for sale in Ruiru, Narok, etc.
+- [Knowledge Hub (Blogs)](https://landhaven.co.ke/blogs): Master guides on zoning rules, subdivision, riparian regulations, and land-use.
+
+## Blog Articles Detail Index
+- [Navigating Land Entitlement](https://landhaven.co.ke/blogs/land-entitlement-process): Guide on zoning approvals, NEMA licensing, and physical planning acts in Kenya.
+- [Highest and Best Use Studies](https://landhaven.co.ke/blogs/highest-and-best-use-study): Framework on legal, physical, and financial HBU tests to optimize land values.
+- [Land Subdivision Process](https://landhaven.co.ke/blogs/land-subdivision-process): Step-by-step physical planning scheme flows, survey details, LCB consents, and costs.
+- [Riparian Zones Setbacks](https://landhaven.co.ke/blogs/riparian-zones-nema-compliance): Environmental regulations, WRA pegging markers, and avoiding structural demolition.
+- [Master Planning Large Acreage](https://landhaven.co.ke/blogs/master-planning-large-scale): Phasing, zoning, and infrastructure guidelines for mixed-use satellite cities.
+- [Nairobi & Kiambu Zoning Variances](https://landhaven.co.ke/blogs/zoning-restrictions-variances): Zonal guidelines, plot ratios, ground coverage percentages, and user extensions.
+
+## Core Contacts
+- **Phone**: +254 723 597 959
+- **Email**: info@jermainetechnologies.co.ke
+- **Office Location**: Nairobi, Kenya
